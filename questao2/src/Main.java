@@ -1,15 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        Matricula brasil = new Matricula(
-                new Aluno("Ana Souza", "123.456.789-09"),
-                "Java Avançado", 500.00, new FabricaBrasil());
-        brasil.confirmar();
-        brasil.imprimirRelatorio();
+        EmissorPassagem aereo = new EmissorAereo();
+        EmissorPassagem rodoviario = new EmissorRodoviario();
+        EmissorPassagem ferroviario = new EmissorFerroviario();
 
-        Matricula chile = new Matricula(
-                new Aluno("Camila Rojas", "12.345.678-5"),
-                "Java Avançado", 45000, new FabricaChile());
-        chile.confirmar();
-        chile.imprimirRelatorio();
+        aereo.emitir("Jose Eduardo", 1000.00);
+        rodoviario.emitir("Henrique Souza", 200.00);
+        ferroviario.emitir("Lara Lima", 500.00);
     }
 }
