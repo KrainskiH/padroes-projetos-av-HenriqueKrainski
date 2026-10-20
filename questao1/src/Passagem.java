@@ -1,6 +1,5 @@
 import java.util.List;
 
-/** Produto abstrato do Factory Method. */
 public abstract class Passagem {
     private final String passageiro;
     private final double tarifa;
